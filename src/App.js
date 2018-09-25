@@ -8,22 +8,13 @@ class App extends Component {
     super(props);
     this.state = {
       places: [
-        { name: "Palo Alto", zip: "94303" },
-        { name: "San Jose", zip: "94088" },
-        { name: "Santa Cruz", zip: "95062" },
+        { name: "Guatemala City", zip: "01011" },
+        { name: "Kyiv", zip: "02095" },
+        { name: "Moscow", zip: "101000" },
         { name: "Honolulu", zip: "96803" },
         { name: "Minsk", zip: "220000" }],
       activePlace: 0
     };
-    this.handleOnSelect = this.handleOnSelect.bind(this);
-  }
-
-  handleOnSelect(index) {
-    this.setState({ activePlace: index });
-  }
-
-  setCity() {
-
   }
 
   render() {
